@@ -33,8 +33,8 @@
 //   newElem.value = sum;
 // }
 
-const clients = ["Mango", "Ajax", "Poly"];
+// const clients = ["Mango", "Ajax", "Poly"];
 
-for (let i = 0; i < clients.length; i += 1) {
-  console.log(clients[i]);
-}
+// for (let i = 0; i < clients.length; i += 1) {
+//   console.log(clients[i]);
+// }

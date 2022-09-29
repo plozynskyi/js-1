@@ -189,3 +189,171 @@
 // console.log(splitMessage("best_for_week", "_"));
 
 // ЗАВДАННЯ 11/32
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//   const messageWords = message.split(" ");
+//   const summWords = messageWords.length;
+//   const totalPrice = summWords * pricePerWord;
+//   return totalPrice;
+// }
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 20));
+// console.log(calculateEngravingPrice("Web-development is creative work", 40));
+// console.log(calculateEngravingPrice("Web-development is creative work", 20));
+
+// ЗАВДАННЯ 12/32
+
+// function makeStringFromArray(array, delimiter) {
+//   let string;
+//   string = array.join(delimiter);
+//   return string;
+// }
+// console.log(
+//   makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " ")
+// );
+// console.log(makeStringFromArray(["M", "a", "n", "g", "o"], ""));
+// console.log(makeStringFromArray(["top", "picks", "for", "you"], "_"));
+
+// console.log();
+
+// ЗАВДАННЯ 13/32
+
+// function slugify(title) {
+//   let slug = title.toLowerCase().split(" ").join("-");
+//   return slug;
+// }
+
+// console.log(slugify("Arrays for begginers"));
+// console.log(slugify("English for developer"));
+// console.log(slugify("Ten secrets of JavaScript"));
+// console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"));
+
+// console.log();
+
+// ЗАВДАННЯ 14/32
+
+// const fruits = ["apple", "plum", "pear", "orange", "banana"];
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, fruits.length - 1);
+// const lastThreeEls = fruits.slice(fruits.length - 3, fruits.length);
+
+// console.log(firstTwoEls);
+// console.log(nonExtremeEls);
+// console.log(lastThreeEls);
+
+// console.log();
+// console.log();
+
+// ЗАВДАННЯ 15/32
+
+// const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// const newClients = ["Peach", "Houston"];
+
+// const allClients = oldClients.concat(newClients);
+
+// console.log(allClients);
+
+// ЗАВДАННЯ 16/32
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//   let newArray =
+//     firstArray.concat(secondArray).length > maxLength
+//       ? firstArray.concat(secondArray).slice(0, maxLength)
+//       : firstArray.concat(secondArray).slice(0, maxLength);
+//   return newArray;
+// }
+
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
+// console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4));
+// console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0));
+
+// console.log();
+
+// ЗАВДАННЯ 17/32
+
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <= end; i += 1) {
+//   console.log(i);
+// }
+
+// console.log();
+
+// ЗАВДАННЯ 18/32
+
+// function calculateTotal(number) {
+//   let arr;
+//   arr = 0;
+//   for (let i = 1; i <= number; i++) {
+//     arr = i + arr;
+//   }
+//   return arr;
+// }
+// console.log(calculateTotal(1));
+// console.log(calculateTotal(3));
+// console.log(calculateTotal(7));
+// console.log(calculateTotal(18));
+// console.log(calculateTotal(24));
+// console.log(calculateTotal());
+
+// ЗАВДАННЯ 19/32
+
+// const fruits = ["apple", "plum", "pear", "orange"];
+
+// for (let i = 0; i < fruits.length; i++) {
+//   const fruit = fruits[i];
+//   console.log(fruit);
+// }
+
+// ЗАВДАННЯ 20/32 - TOTAL
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+//   return total;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+
+// ЗАВДАННЯ 21/32
+
+// function findLongestWord(string) {
+//   for (let i = 0; i, string.length; i += 1) {
+//     consol.log(string[i]);
+//   }
+//   return string;
+// }
+
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// console.log(findLongestWord("Google do a roll"));
+// console.log(findLongestWord("May the force be with you"));
+
+//Напишите код, который будет спрашивать
+//логин с помощью prompt и логировать результат
+//в консоль браузера
+
+//Если посетитель вводит "Админ",
+//то prompt запрашивает пароль.
+//Если ничего не ввели или нажата клавиша Esc
+//вывести стороку "Отменено"
+//В противном случае вывести строку "Я вас не знаю"
+
+//Пароль проверять так:
+//Если введён пароль "Я главный",
+//то вывести строку "Здравствуйте!"
+//иначе выводить строку "Неверный пароль!"
+
+// Домашка
+
+//Напишите функцию caclculateAverage()
+//которая принимает произвольное количество
+//аргументов и возвращает их среднее значение.
+//Добавить проверку, что аргументы это числа.
