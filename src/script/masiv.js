@@ -386,15 +386,159 @@
 
 // ЗАВДАННЯ 24/32
 
-function checkFruit(fruit) {
-  const fruits = ["apple", "plum", "pear", "orange"];
-  let findFruit = fruits.includes(fruit);
-  return findFruit;
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+//   return fruits.includes(fruit);
+// }
+
+// console.log(checkFruit("plum"));
+// console.log(checkFruit("mandarin"));
+// console.log(checkFruit("pear"));
+// console.log(checkFruit("Pear"));
+// console.log(checkFruit("apple"));
+
+// ЗАВДАННЯ 25/32
+
+// function getCommonElements(array1, array2) {
+//   const uniqueElements = [];
+
+//   for (const element of array1) {
+//     if (array2.includes(element)) {
+//       uniqueElements.push(element);
+//     }
+//   }
+
+//   return uniqueElements;
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+
+// ЗАВДАННЯ 26/32
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+
+//   for (const element of order) {
+//     total += element;
+//   }
+
+//   return total;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+// console.log(calculateTotalPrice([]));
+
+// ЗАВДАННЯ 27/32
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+
+//   for (const number of numbers) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+// console.log();
+
+// ЗАВДАННЯ 28/32
+
+// const a = 3 % 3;
+// const b = 4 % 3;
+// const c = 11 % 4;
+// const d = 12 % 7;
+// const e = 8 % 6;
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(d);
+// console.log(e);
+
+// ЗАВДАННЯ 29/32
+
+// function getEvenNumbers(start, end) {
+//   const newMasiv = [];
+
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       newMasiv.push(i);
+//     }
+//   }
+
+//   return newMasiv;
+// }
+
+// console.log(getEvenNumbers(2, 5));
+// console.log(getEvenNumbers(3, 11));
+// console.log(getEvenNumbers(6, 12));
+// console.log(getEvenNumbers(8, 8));
+// console.log(getEvenNumbers(7, 7));
+
+// ЗАВДАННЯ 30/32
+
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+// console.log(number);
+
+// ЗАВДАННЯ 31/32
+
+// function findNumber(start, end, divisor) {
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//       return number;
+//     }
+//   }
+// }
+
+// console.log(findNumber(2, 6, 5));
+// console.log(findNumber(8, 17, 3));
+// console.log(findNumber(6, 9, 4));
+// console.log(findNumber(16, 35, 7));
+
+// ЗАВДАННЯ 32/32
+
+function includes(array, value) {
+  for (const element of array) {
+    if (element === value) {
+      return true;
+    }
+  }
+  return false;
 }
 
-console.log(checkFruit("plum"));
-console.log(checkFruit("mandarin"));
-console.log(checkFruit("pear"));
-console.log(checkFruit("Pear"));
-console.log(checkFruit("apple"));
-console.log(checkFruit());
+console.log(includes([1, 2, 3, 4, 5], 3));
+console.log(includes([1, 2, 3, 4, 5], 17));
+console.log(
+  includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter")
+);
+console.log(
+  includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus")
+);
+console.log(includes(["apple", "plum", "pear", "orange"], "plum"));
+console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
