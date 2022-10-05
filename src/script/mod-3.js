@@ -43,7 +43,7 @@
 
 // ЗАВДАННЯ 2/41
 
-const apartment = {
+let apartment = {
   imgUrl: "https://via.placeholder.com/640x480",
   descr: "Spacious apartment in the city center",
   rating: 4,
