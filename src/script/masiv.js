@@ -326,34 +326,75 @@
 // ЗАВДАННЯ 21/32
 
 // function findLongestWord(string) {
-//   for (let i = 0; i, string.length; i += 1) {
-//     consol.log(string[i]);
+//   string = string.split(" ");
+//   let biggestWord = string[0];
+//   for (let word of string) {
+//     if (word.length > biggestWord.length) {
+//       biggestWord = word;
+//     }
 //   }
-//   return string;
+//   return biggestWord;
 // }
-
 // console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
 // console.log(findLongestWord("Google do a roll"));
 // console.log(findLongestWord("May the force be with you"));
 
-//Напишите код, который будет спрашивать
-//логин с помощью prompt и логировать результат
-//в консоль браузера
+// 11111111111111111111111111111111111111111111111111111111111111111111111111111
 
-//Если посетитель вводит "Админ",
-//то prompt запрашивает пароль.
-//Если ничего не ввели или нажата клавиша Esc
-//вывести стороку "Отменено"
-//В противном случае вывести строку "Я вас не знаю"
+// let clientCounter = 18;
+// const maxClients = 25;
 
-//Пароль проверять так:
-//Если введён пароль "Я главный",
-//то вывести строку "Здравствуйте!"
-//иначе выводить строку "Неверный пароль!"
+// while (clientCounter < maxClients) {
+//   console.log(clientCounter);
+//   clientCounter += 1;
+// }
 
-// Домашка
+// 11111111111111111111111111111111111111111111111111111111111111111111111111111
 
-//Напишите функцию caclculateAverage()
-//которая принимает произвольное количество
-//аргументов и возвращает их среднее значение.
-//Добавить проверку, что аргументы это числа.
+// ЗАВДАННЯ 22/32
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   for (let i = min; i <= max; i += 1) {
+//     numbers.push(i);
+//   }
+//   return numbers;
+// }
+
+// console.log(createArrayOfNumbers(1, 3));
+// console.log(createArrayOfNumbers(14, 17));
+// console.log(createArrayOfNumbers(29, 34));
+// console.log(createArrayOfNumbers());
+
+// ЗАВДАННЯ 23/32
+
+// function filterArray(numbers, value) {
+//   let newMasiv = [];
+//   for (const numb of numbers) {
+//     if (numb > value) {
+//       newMasiv.push(numb);
+//     }
+//   }
+//   return newMasiv;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+// ЗАВДАННЯ 24/32
+
+function checkFruit(fruit) {
+  const fruits = ["apple", "plum", "pear", "orange"];
+  let findFruit = fruits.includes(fruit);
+  return findFruit;
+}
+
+console.log(checkFruit("plum"));
+console.log(checkFruit("mandarin"));
+console.log(checkFruit("pear"));
+console.log(checkFruit("Pear"));
+console.log(checkFruit("apple"));
+console.log(checkFruit());
