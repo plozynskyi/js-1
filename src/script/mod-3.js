@@ -224,3 +224,93 @@
 // console.log(values);
 
 // ЗАВДАННЯ 11/41
+
+// const keys = [];
+// const values = [];
+// const advert = {
+//   service: "apt",
+// };
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
+
+// for (const key in apartment) {
+//   // Change code below this line
+//   if (apartment.hasOwnProperty(key)) {
+//     keys.push(key);
+//     values.push(apartment[key]);
+//   }
+// }
+// console.log(keys);
+// console.log(values);
+
+// ЗАВДАННЯ 12/41
+
+// function countProps(object) {
+//   let propCount = 0;
+//   // Change code below this line
+
+//   const keys = Object.keys(object);
+//   console.log(keys);
+//   propCount += keys.length;
+
+//   // Change code above this line
+//   return propCount;
+// }
+
+// console.log(countProps({}));
+// console.log(countProps({ name: "Mango", age: 2 }));
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+
+// ЗАВДАННЯ 13/41
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+
+// const keys = Object.keys(apartment);
+
+// for (const key of keys) {
+//   values.push(apartment[key]);
+// }
+
+// console.log(keys);
+// console.log(apartment);
+// console.log(values);
+
+// ЗАВДАННЯ 14/41
+
+// function countProps(object) {
+//   let propCount = 0;
+
+//   const keys = Object.keys(object);
+//   console.log(keys);
+//   propCount += keys.length;
+
+//   return propCount;
+// }
+
+// console.log(countProps({}));
+// console.log(countProps({ name: "Mango", age: 2 }));
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+
+// ЗАВДАННЯ 14/41
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+
+// const keys = Object.keys(apartment);
+
+// const values = Object.values(apartment);
+
+// console.log(keys);
+// console.log(values);
+
+// ЗАВДАННЯ 15/41
