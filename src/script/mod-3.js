@@ -517,31 +517,363 @@
 
 // ЗАВДАННЯ 25/41
 
-const forecast = {
-  today: {
-    low: 28,
-    high: 32,
-    icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
-  },
-  tomorrow: {
-    low: 27,
-    high: 31,
-  },
-};
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+
+// const {
+//   today: {
+//     low: lowToday,
+//     high: highToday,
+//     icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: lowTomorrow,
+//     high: highTomorrow,
+//     icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+//   },
+// } = forecast;
+
+// console.log(lowToday);
+// console.log(highToday);
+// console.log(todayIcon);
+
+// console.log(highTomorrow);
+// console.log(lowTomorrow);
+// console.log(tomorrowIcon);
+
+// ЗАВДАННЯ 26/41
+
 // Change code below this line
 
-const highToday = forecast.today.high;
-const lowToday = forecast.today.low;
-const todayIcon = forecast.today.icon;
+// function calculateMeanTemperature(forecast) {
+//   const {
+//     today: { low: todayLow, high: todayHigh },
+//     tomorrow: { low: tomorrowLow, high: tomorrowHigh },
+//   } = forecast;
 
-const highTomorrow = forecast.tomorrow.high;
-const lowTomorrow = forecast.tomorrow.low;
-const tomorrowIcon = forecast.tomorrow.icon;
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
 
-console.log(highToday);
-console.log(lowToday);
-console.log(todayIcon);
+// ЗАВДАННЯ 27/41
 
-console.log(highTomorrow);
-console.log(lowTomorrow);
-console.log(tomorrowIcon);
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+
+// console.log(bestScore);
+// console.log(worstScore);
+
+// ЗАВДАННЯ 28/41
+
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+
+// const allScores = [
+//   ...firstGroupScores,
+//   ...secondGroupScores,
+//   ...thirdGroupScores,
+// ];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+
+// console.log(allScores);
+// console.log(bestScore);
+// console.log(worstScore);
+
+// ЗАВДАННЯ 29/41
+
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+
+// // Change code below this line
+// const finalSettings = { ...defaultSettings, ...overrideSettings };
+
+// console.log(finalSettings);
+
+// ЗАВДАННЯ 30/41
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+
+//   // Change code above this line
+//   return { category, priority, completed, ...data };
+// }
+
+// makeTask({});
+// console.log(makeTask({}));
+
+// makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" });
+// console.log(
+//   makeTask({
+//     category: "Homemade",
+//     priority: "Low",
+//     text: "Take out the trash",
+//   })
+// );
+
+// makeTask({ category: "Finance", text: "Take interest" });
+// console.log(makeTask({ category: "Finance", text: "Take interest" }));
+
+// makeTask({ priority: "Low", text: "Choose shampoo" });
+// console.log(makeTask({ priority: "Low", text: "Choose shampoo" }));
+
+// makeTask({ text: "Buy bread" });
+// console.log(makeTask({ text: "Buy bread" }));
+
+// ЗАВДАННЯ 31/41
+
+// Change code below this line
+
+// function add(...args) {
+//   let totalArgs = 0;
+
+//   for (const arg of args) {
+//     totalArgs += arg;
+//   }
+
+//   return totalArgs;
+// }
+
+// console.log(add(15, 27));
+// console.log(add(12, 4, 11, 48));
+// console.log(add(32, 6, 13, 19, 8));
+// console.log(add(74, 11, 62, 46, 12, 36));
+
+// ЗАВДАННЯ 32/41
+
+// function addOverNum(...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     if (args[0] < arg) {
+//       total += arg;
+//     }
+//   }
+
+//   return total;
+// }
+
+// addOverNum(50, 15, 27); // 0
+// addOverNum(10, 12, 4, 11, 48, 10, 8); // 71
+// addOverNum(15, 32, 6, 13, 19, 8); // 51
+// addOverNum(20, 74, 11, 62, 46, 12, 36); // 218
+
+// console.log(addOverNum(50, 15, 27));
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+// console.log(addOverNum(15, 32, 6, 13, 19, 8));
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
+
+// ЗАВДАННЯ 33/41
+
+// function findMatches(arr, ...args) {
+//   const matches = [];
+//   for (let i = 0; i < arr.length; i += 1) {
+//     for (let j = 0; j < args.length; j += 1) {
+//       if (arr[i] === args[j]) {
+//         matches.push(args[j]);
+//       }
+//     }
+//   }
+//   return matches;
+// }
+
+// findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7); // повертає [1, 2]
+// findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2); // повертає [17, 89, 2]
+// findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41); // повертає [24, 9, 41]
+// findMatches([63, 11, 8, 29], 4, 7, 16); // повертає []
+
+// console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+// console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+// console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+// console.log(findMatches([63, 11, 8, 29], 4, 7, 16));
+
+// ЗАВДАННЯ 34/41
+
+// const bookShelf = {
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
+// };
+
+// bookShelf.getBooks();
+// bookShelf.addBook("Haze");
+// bookShelf.removeBook("Red sunset");
+
+// ЗАВДАННЯ 35/41
+
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     const bookIndex = this.books.indexOf(oldName);
+//     this.books.splice(bookIndex, 1, newName);
+//   },
+// };
+
+// bookShelf.updateBook("Haze", "Dungeon chronicles");
+// // bookShelf.updateBook("The last kingdom", "Dune");
+
+// console.log(bookShelf.books);
+
+// ЗАВДАННЯ 36/41
+
+// const atTheOldToad = {
+//   // Change code below this line
+//   potions: [],
+//   // Change code above this line
+// };
+
+// ЗАВДАННЯ 37/41
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+
+//   getPotions() {
+//     return this.potions;
+//   },
+// };
+
+// console.log(atTheOldToad.potions);
+
+// ЗАВДАННЯ 38/41
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   addPotion(potionName) {
+//     // Change code below this line
+//     this.potions.push(potionName);
+//     return this.potions;
+//     // Change code above this line
+//   },
+// };
+
+// atTheOldToad.addPotion("Invisibility");
+// atTheOldToad.addPotion("Power potion");
+
+// console.table(atTheOldToad);
+
+// ЗАВДАННЯ 39/41
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // Change code below this line
+
+//     const bookIndex = this.potions.indexOf(potionName);
+//     this.potions.splice(bookIndex, 1);
+
+//     // Change code above this line
+//   },
+// };
+
+// atTheOldToad.removePotion("Dragon breath"); // буде масив ["Speed potion", Stone skin"]
+// // atTheOldToad.removePotion("Speed potion"), // буде масив ["Stone skin"]
+// console.log(atTheOldToad.potions);
+
+// ЗАВДАННЯ 40/41
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   updatePotionName(oldName, newName) {
+//     // Change code below this line
+//     const bookIndex = this.potions.indexOf(oldName);
+//     this.potions.splice(bookIndex, 1, newName);
+
+//     // Change code above this line
+//   },
+// };
+
+// ЗАВДАННЯ 41 /41
+
+const atTheOldToad = {
+  potions: [
+    { name: "Speed potion", price: 460 },
+    { name: "Dragon breath", price: 780 },
+    { name: "Stone skin", price: 520 },
+  ],
+
+  getPotions() {
+    return this.potions;
+  },
+  addPotion(newPotion) {
+    for (const potion of this.potions) {
+      if (potion.name === newPotion.name) {
+        return `Error! Potion ${newPotion.name} is already in your inventory!`;
+      }
+    }
+    return this.potions.push(newPotion);
+  },
+
+  removePotion(potionName) {
+    for (let potion of this.potions) {
+      let potionIndex = potion.name.indexOf(potionName);
+      console.log(potionIndex);
+      if (potionIndex === -1) {
+        `Potion ${potionName} is not in inventory!`;
+      } else this.potions.splice(potionIndex, 1);
+    }
+    return;
+  },
+
+  updatePotionName(oldName, newName) {
+    const potionIndex = this.potions.indexOf(oldName);
+
+    if (potionIndex === -1) {
+      return `Potion ${oldName} is not in inventory!`;
+    }
+
+    this.potions.splice(potionIndex, 1, newName);
+  },
+};
+
+// console.table(atTheOldToad.getPotions());
+// console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
+// console.log(atTheOldToad.addPotion({ name: "Power potion", price: 270 }));
+// console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }));
+// console.log(atTheOldToad.addPotion({ name: "Stone skin", price: 240 }));
+// console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }));
+// console.log(atTheOldToad.addPotion({ name: "Stone skin", price: 240 }));
+
+atTheOldToad.removePotion("Dragon breath");
+// atTheOldToad.removePotion("Speed potion");
+
+// console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"));
+// console.log(
+//   atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion")
+// );
+// console.log(atTheOldToad.getPotions());

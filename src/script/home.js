@@ -65,3 +65,47 @@
 // console.log(accessType);
 // console.log(message);
 // console.log(book);
+
+// const friends = [
+//   { name: "Mango", online: false },
+//   { name: "Kiwi", online: true },
+//   { name: "Poly", online: true },
+//   { name: "Ajax", online: false },
+// ];
+
+// console.table(friends);
+
+// const getAllNames = [];
+
+// for (const friend of friends) {
+//   console.log(friend.name);
+//   getAllNames.push(friend.name);
+// }
+
+// console.log(getAllNames);
+
+// const getOnlineFriends = function (allFriends) {
+//   const onlineFriends = [];
+
+//   for (const friend of allFriends) {
+//     if (friend.online) {
+//       onlineFriends.push(friend);
+//     }
+//   }
+//   return onlineFriends;
+// };
+
+// console.log(getOnlineFriends(friends));
+
+// const getOfflineFriends = function (allFriends) {
+//   const offlineFriends = [];
+
+//   for (const friend of allFriends) {
+//     if (!friend.online) {
+//       offlineFriends.push(friend);
+//     }
+//   }
+//   return offlineFriends;
+// };
+
+// console.log(getOfflineFriends(friends));
