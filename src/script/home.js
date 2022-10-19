@@ -109,3 +109,11 @@
 // };
 
 // console.log(getOfflineFriends(friends));
+
+const buttonRef = document.querySelector(".js-button");
+
+const handlBtnClick = function () {
+  console.log("Клик по кнопке" + Date.now());
+};
+
+buttonRef.addEventListener("click", handlBtnClick);
