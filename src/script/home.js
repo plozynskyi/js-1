@@ -110,10 +110,30 @@
 
 // console.log(getOfflineFriends(friends));
 
-const buttonRef = document.querySelector(".js-button");
+// const buttonRef = document.querySelector(".js-button");
 
-const handlBtnClick = function () {
-  console.log("Клик по кнопке" + Date.now());
-};
+// const handlBtnClick = function () {
+//   console.log("Клик по кнопке" + Date.now());
+// };
 
-buttonRef.addEventListener("click", handlBtnClick);
+// buttonRef.addEventListener("click", handlBtnClick);
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// // Метод перебирання forEach
+// numbers.forEach(function (number) {
+//   console.log(`Значення ${number}`);
+// });
+
+// const add = function (a, b, c) {
+//   console.log(a, b, c);
+//   return a + b + c;
+// };
+
+// const addArrow = (a, b, c) => {
+//   console.log(a, b, c);
+//   return a + b + c;
+// };
+
+// console.log(add(5, 10, 15));
+// console.log(addArrow(5, 10, 15));
