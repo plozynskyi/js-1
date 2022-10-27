@@ -137,3 +137,22 @@
 
 // console.log(add(5, 10, 15));
 // console.log(addArrow(5, 10, 15));
+
+//Напишите две функции
+// letMeSeeYourName(callback) - спрашивает имя пользователя
+//через prompt и вызывает callback функцию
+//greet(name) - коллбек принимающий имя и логирующий в консоль
+//строку "Привет <name>"
+//Реализуй проверку, что prompt не пустой
+
+letMeSeeYourName(greet);
+
+function letMeSeeYourName(callback) {
+  const a = prompt("Введіть своє ім'я");
+
+  callback(a);
+}
+
+function greet(name) {
+  console.log(`Привет ${name}`);
+}
